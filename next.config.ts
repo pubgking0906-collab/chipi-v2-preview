@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
+  basePath: "/chipi-v2-preview",
+  assetPrefix: "/chipi-v2-preview/",
 };
 
 export default nextConfig;
