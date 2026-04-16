@@ -21,56 +21,26 @@ const features = [
   {
     icon: CreditCard,
     title: "IBAN Accounts",
-    description: "Open multi-currency accounts with dedicated IBANs for seamless banking integration. Support for EUR, USD, GBP, CHF and more.",
+    description: "Personal & business accounts with dedicated IBAN for seamless banking integration.",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: ArrowRightLeft,
-    title: "SEPA & SWIFT Transfers",
-    description: "Send and receive international payments through SEPA and SWIFT networks. Reach 200+ countries with competitive rates.",
-    color: "from-purple-500 to-pink-500",
-  },
-  {
-    icon: Wallet,
-    title: "Crypto Wallets",
-    description: "Self-custody wallets with full control over private keys. Support for BTC, ETH, USDT, USDC and 100+ digital assets.",
-    color: "from-orange-500 to-red-500",
-  },
-  {
-    icon: Coins,
-    title: "Crypto Exchange",
-    description: "Buy, sell, and swap cryptocurrencies with competitive rates. Real-time pricing with deep liquidity pools.",
-    color: "from-green-500 to-emerald-500",
+    title: "Crypto to Fiat",
+    description: "Instant conversion between crypto and traditional currencies with competitive rates.",
+    color: "from-teal-500 to-emerald-500",
   },
   {
     icon: TrendingUp,
-    title: "Investment Products",
-    description: "Managed certificates with Swiss ISIN. Access to professional-grade investment vehicles for qualified investors.",
-    color: "from-indigo-500 to-violet-500",
+    title: "Asset Management",
+    description: "Professional portfolio management and investment solutions for your digital and traditional assets.",
+    color: "from-purple-500 to-pink-500",
   },
   {
-    icon: Building2,
-    title: "Business Accounts",
-    description: "Dedicated accounts for companies and institutions. Multi-user access, approval workflows, and corporate features.",
-    color: "from-teal-500 to-cyan-500",
-  },
-  {
-    icon: Users,
-    title: "HNW Services",
-    description: "Premium services for high-net-worth clients. Dedicated account manager, priority support, and custom limits.",
-    color: "from-amber-500 to-orange-500",
-  },
-  {
-    icon: FileCheck,
-    title: "KYC/AML Compliance",
-    description: "Automated verification with leading providers. Sumsub, Onfido, and Chainalysis integration built-in.",
-    color: "from-rose-500 to-pink-500",
-  },
-  {
-    icon: Lock,
-    title: "Custody Solutions",
-    description: "Institutional-grade custody with Fireblocks and Bitgo. Multi-sig, MPC, and cold storage options.",
-    color: "from-slate-500 to-gray-600",
+    icon: Globe,
+    title: "Global Access",
+    description: "Operate worldwide with multi-currency support and international payment networks.",
+    color: "from-orange-500 to-amber-500",
   },
 ];
 
@@ -120,7 +90,7 @@ export default function Features() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
           {features.map((feature, i) => (
             <motion.div
               key={i}
